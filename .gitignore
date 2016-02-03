@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ################################# validation
 /w3c/
 
@@ -51,4 +52,7 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
-
+=======
+target
+.env
+>>>>>>> 57357b49df7285942ae16fe90ffce01c99ee78cf
