@@ -6,7 +6,7 @@
 target/
 .env
 /target-grunt/
-public/assets/**
+
 
 pom.xml.tag
 pom.xml.releaseBackup
