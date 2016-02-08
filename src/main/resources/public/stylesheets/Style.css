@@ -6,6 +6,7 @@
     clear: both;
     display: block;
 
+
 }
 [class*="col-"] {
     float: left;
