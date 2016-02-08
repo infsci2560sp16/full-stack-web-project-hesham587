@@ -1,1 +1,1 @@
-web:    java -cp full-stack-web-project-hesham587/src/main/java *Main
+web:    java -cp target/classes:target/dependency/* Main
