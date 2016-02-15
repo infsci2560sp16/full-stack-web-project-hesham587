@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #c1bdba;
+  background: white;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -180,7 +180,7 @@ textarea {
 }
 .header {
    /* background-color: #9933cc;*/
-background-color: #c1bdba;
+background-color: white;
     color: #ffffff;
     padding: 15px;
 	
