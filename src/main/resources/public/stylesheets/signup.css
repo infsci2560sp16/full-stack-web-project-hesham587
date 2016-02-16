@@ -93,3 +93,20 @@ img {
     width: 100%;
     height: auto;
 }
+.searchButton{
+	width:100%;
+	 border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  background: #1ab188;
+  color: #ffffff;
+
+
+  margin-top:10px;
+  
+}
