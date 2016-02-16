@@ -31,7 +31,7 @@ $(document).ready(function() {
     var inputWidthPercent = inputWidth / barWidth * 100 + "%";
 
     $(input).css({ 'margin-left': dropdownWidth, 'width': inputWidthPercent });
-  }
+  };
 
   function dropdownOn() {
     $(dropdownList).fadeIn(25);
