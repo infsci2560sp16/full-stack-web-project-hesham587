@@ -11,59 +11,38 @@
 
     <title>Post view</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="stylesheets/post.css" type="text/css" rel="stylesheet">
+
+  
 	<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/clean-blog.css" />
 
-    <!-- Custom CSS -->
-    <link href="stylesheets/postreview.css" type="text/css" rel="stylesheet">
+    
 
-    <!-- Custom Fonts 
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
--->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+
 
 </head>
 
 <body>
 <div class="header">
    
-<img src="banner2.png" alt="Smily Face">
+<img src="banner.jpg" alt="Smily Face">
 
 </div>
-
-    
-	<div class="col-3 menu">
-
-<button id="Signup" class="button button-block">Sign Up Now!</button>
-<button id="login" class="button button-block">Log in</button>
-<script type="text/javascript">
-    document.getElementById("Signup").onclick = function () {
-        location.href = "\signup.html";
-    };
-</script>
-
-<script type="text/javascript">
-    document.getElementById("login").onclick = function () {
-        location.href = "\Login.html";
-    };
-</script>
+<div>
 <ul>
-<li>Categories</li>
-<li>Search</li>
-<li>Weekly Picks</li>
-<li>Archives</li>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="ategories.html">Categories</a></li>
+  <li><a href="search.html">Search</a></li>
+   <li class="left"><a 	href="#about">About</a></li>
+    <li class="left"><a href="login.html">Login</a></li>
+	<li class="left"><a href="signup.html">Signup</a></li>
+  </ul>
+
 </ul>
-	
-	
-		</div>
+</div>
+
+
 		
 
     <!-- Page Header -->
@@ -131,9 +110,9 @@
 	
 <textarea id="commentText" name="comments" cols="250" rows="5" class="col-10" placeholder="Type your comment here... "></textarea>
 
-<div>
+<div class="col-12">
 
-<br><button  value="Submit" class="button button-block"  onclick="addRow()">Submite</button>
+<br><button   value="Submit" class="button button-block"  onclick="addRow()">Submite</button>
 <button type="reset" value="Reset" class="button button-block" onclick=Rest()>Reset</button>
 <script src="js/comments.js"></script>
 </div>
