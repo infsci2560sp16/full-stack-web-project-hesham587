@@ -27,7 +27,7 @@ function addRow() {
 
     div.className = 'class="col-9">';
 
-    div.innerHTML ='\<button class="button button-block" value="Delete comment" onclick="removeRow(this)">Delete comment </button>' + getCommentBox;
+    div.innerHTML ='\<div class="col-1"></div><button class="button button-block" value="Delete comment" onclick="removeRow(this)">Delete comment </button>' + getCommentBox;
 
      document.getElementById('comments').appendChild(div);
 	Rest();

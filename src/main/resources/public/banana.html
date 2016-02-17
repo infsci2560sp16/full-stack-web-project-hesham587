@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Banana</title>
+
+
+  
+	<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" />
+<script src="js/comments.js"></script>
+    
+
+
+
+
+</head>
+
+<body>
+<div class="header">
+   
+<img src="banner.jpg" alt="Smily Face">
+
+</div>
+<div>
+<ul>
+  <li><a href="home.html">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+  <li><a href="about.html">About</a></li>
+      <li class="left"><a href="login.html">Login</a></li>
+	<li class="left"><a href="signup.html">Signup</a></li>
+  </ul>
+
+</div>
+
+<div class="header">
+   
+<img src="banana.png" alt="Smily Face">
+
+</div>
+		
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+	<div id="snap" class="col-3-6">
+
+   
+        
+                <div   >
+                    <div >
+                        <h1 >    "You gotta touch the banana" for Wi-Fi access, says sys admin</h1>
+                       
+                        <span class="meta">Posted by <a href="#"> Lisa Vaas</a> on August 24, 2014</span>
+                    </div>
+                </div>
+
+ 
+  
+
+    <!-- Post Content -->
+  
+        <div class="col-3-6">
+            <div class="row">
+                <div>
+                    <p>Here’s how it worked: The banana was wired to a Makey Makey circuit board and a cheap Raspberry Pi computer that dispensed an 8-hour personal password for guests to access the company’s captive Wi-Fi portal when a finger touch to the fruit authentication system provided the necessary micro-charge.
+
+What’s more, Danish network engineer Stefan Milo swore at one point that the banana was there to stay – it would never get swapped out, even after reaching the age of rich, compost-worthy brown:</p>
+
+
+<blockquote>If you want Wi-Fi, you gotta touch it. No matter how smelly it is, YOU TOUCH IT!!</blockquote>
+
+You gotta touch the banana. If you can’t touch the banana, you gotta see the GIF.
+
+As Milo explained in his initial Reddit post last Monday, he was tasked with setting up the captive portal and creating the temporary password vouchers – in a spreadsheet.
+
+Well, he said, no thanks: he doesn’t do spreadsheets.
+
+He expounded in a chat with The Register:
+
+
+<blockquote>When you go to $corp, and the receptionist hands you a small piece of paper that someone printed out on an A4, and then spent time on cutting out into small pieces, I cringe.
+
+Even if you have a small voucher printer, it still involves the receptionist, installing of the printer, support when the printer driver effs up, etc. And it still involves paper – what is this? 1999?</blockquote>
+
+<p>So instead of time-warping back to the paper days, he spent a weekend setting up a script on a Raspberry Pi that generated a unique guest key on command and displayed the code on an attached display.
+
+It all took 8-10 hours, took up 20 lines of code, and cost him less than $100, including fabrication of an acrylic case.
+
+The script was triggered via the Makey Makey board, which alerted the Pi whenever it detected a voltage drop in the attached banana.
+
+The touch of a human finger created a tiny electrical connection, which then changed the banana’s capacitance – a change that could be detected by the circuit board.
+
+The Pi didn’t know it was taking orders from a piece of fruit. As far as it’s concerned, a banana is as good as a keyboard, or a mouse.
+
+The system can be powered by things non-banana, as well, as you can see in Makey Makey’s video, which shows the circuit board being switched by all sorts of household and culinary items: scissors, a slip-n-slide, a cream pie, or Jello, for example.
+
+As Milo’s image shows, the pin cable for the circuit board rests on the banana, and its USB stick connects it to the Pi.
+
+He posted this list of reasons as answer to the inevitable question – “Why?”</p>
+
+<p>1.It’s fun</p>
+
+<p>2.It’ll make people smile</p>
+
+<p>3.It beats a static WPA password in funnyness</p>
+
+<p>4.When people leave our office, then can’t access our Wi-Fi because there’s no banana to touch</p>
+
+<p>When users touched the banana, they got a personal password good for 8 hours, all without pestering a receptionist, and all without reading a number off a kludgy spreadsheet.
+
+Milo says the Pi has 5,000 vouchers.
+
+He told The Register that the banana setup only served about five guests a week, but with a simple expansion of the voucher file (and regular banana changes), the setup could run for years on end, accommodating thousands of office guests.
+
+And why am I using past tense to talk about this authentication system, you may well ask?
+
+Because the day after he swore that the banana would live in rotten eternity, tethered to the Pi, with Milo ruling over the system as Lord of the Fruit Flies, the banana was no more, he said in a banana update:</p>
+
+
+<blockquote>It’s a croissant now. Bossman ate the banana.</blockquote>
+
+ 
+
+                    
+
+                </div>
+            </div>
+        </div>
+ 
+	 </div>
+	 
+
+ 
+	 <div   id="comments">
+	 </div>
+	 
+	
+		
+	<div class="col-1">
+</div>
+<textarea id="commentText" name="comments" cols="300" rows="5" class="col-10" placeholder="Type your comment here... "></textarea>
+
+<div class="col-3-6">
+
+<br>
+
+<div class="col-4">
+</div>
+
+<div class="col-4">
+<button   value="Submit" class="button button-block"  onclick="addRow()">Submite</button>
+<button type="reset" value="Reset" class="button button-block" onclick=Rest()>Reset</button>
+</div>
+
+
+
+ </div>
+
+
+   <div class="row">
+
+</div>
+    <div class="footer">
+<p>Copyright.</p>
+</div>
+
+
+
+</body>
+
+</html>
+
