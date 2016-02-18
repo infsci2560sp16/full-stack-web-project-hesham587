@@ -1,7 +1,7 @@
 body {
     background-color: white;
 	  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
+  font-size: 16px;
   color: #404040;
 }
 
@@ -23,7 +23,7 @@ body {
 background-color: white;
     color: #ffffff;
     padding: 15px;
-	
+	height:100px
 	 margin-bottom: 7px;
 }
 .menu ul {
@@ -149,7 +149,13 @@ background-color: #1ab188;
 }
 img {
     width: 100%;
-    height: auto;
+    height: 150px;
+}
+#Postimg {
+    width: 50%;
+    height: 150px;
+	margin-left: 25%;
+	
 }
 .button {
     background-color: #1ab188; /* Green */
