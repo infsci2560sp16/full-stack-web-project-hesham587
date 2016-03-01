@@ -46,7 +46,7 @@
                         </h2>
                       
                     </a>
-                    <p>  Posted by <a href="#">${author1}</a> on September 24, 2014</p>
+                    <p>  Posted by <a href="#">${author1}</a> on ${date1}</p>
                 </div>
                 <hr>
                 <div>
@@ -55,7 +55,7 @@
                     ${article2}
                         </h2>
                     </a>
-                    <p >Posted by <a href="#">${author2}</a> on September 18, 2014</p>
+                    <p >Posted by <a href="#">${author2}</a> on ${date2}</p>
                 </div>
                 <hr>
                 <div >
@@ -65,7 +65,7 @@
                         </h2>
                        
                     </a>
-                    <p >Posted by <a href="#">${author3}</a> on August 24, 2014</p>
+                    <p >Posted by <a href="#">${author3}</a> on ${date3}</p>
                 </div>
                 <hr>
                 <div  >
@@ -75,7 +75,7 @@
                         </h2>
                         
                     </a>
-                    <p class="post-meta">Posted by <a href="#">${author4}</a> on July 8, 2014</p>
+                    <p class="post-meta">Posted by <a href="#">${author4}</a> on ${date4}</p>
                 </div>
                 <hr>
                 <!-- Pager -->
