@@ -22,15 +22,15 @@ public class Main {
 
     get("/hello", (req, res) -> "Hello World, this me Hisham");
 
-    get("/", (request, response) -> {
+    get("/index", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
 
-            return new ModelAndView(attributes, "home.ftl");
+            return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
 		
 		//-------------------------------------------------------------
-		  get("/home", (request, response) -> {
+		  get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("article1", "This is a freemarker field:Selfie + money + Snapchat = robbed! Don’t flash your cash…");
 			 attributes.put("author1", "Paul Ducklin ");
