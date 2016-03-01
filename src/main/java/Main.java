@@ -28,6 +28,19 @@ public class Main {
 
             return new ModelAndView(attributes, "index.ftl");
         }, new FreeMarkerEngine());
+		
+		//-------------------------------------------------------------
+		  get("/home", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            attributes.put("article1", " Selfie + money + Snapchat = robbed! Don’t flash your cash…");
+    attributes.put("article2", " Police destroy evidence with 10 failed passcode attempts on iPhone");
+	  attributes.put("article3", "  Facebook 'Message Requests' lets you contact anyone, even if you're not friends");
+	    attributes.put("article4", "You gotta touch the banana for Wi-Fi access, says sys admin");
+		//  attributes.put("article5", "Hello World!");
+		  //  attributes.put("article6", "Hello World!");
+            return new ModelAndView(attributes, "home.ftl");
+        }, new FreeMarkerEngine());
+		//----------------------------------------------------------------------------------
 
     get("/db", (req, res) -> {
       Connection connection = null;
