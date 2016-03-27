@@ -38,7 +38,7 @@ public class articleService {
     
     public ArticleService(){
         ArticleIDs.add("0001");
-       Article.add("0002");
+       ArticleIDs.add("0002");
         
         ArticleTitle.add("Engineering Psychology and Human Performance");
         ArticleTitle.add("Some Book");
