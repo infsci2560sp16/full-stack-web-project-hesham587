@@ -116,7 +116,7 @@ public class ArticleService {
             for (int i = 0; i<length; i++){
                 if(id.equals(ArticleIDs.get(i))){
                     article = new HashMap<String, String>();
-                    article.put("ArticlsIDs",ArticlsIDs.get(i));
+                    article.put("ArticleIDs",ArticleIDs.get(i));
                     article.put("ArticleTitle",ArticleTitle.get(i));
                     article.put("BookAuthors",ArticleAuthors.get(i));
                    // book.put("BookCondition",BooksCondition.get(i));
