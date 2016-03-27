@@ -2,7 +2,7 @@ package Services;
 
 import java.util.*;
 
-public class BooksService {
+public class articleService {
     private static HashMap<String, String> article ;
     private static ArrayList<Map<String, String>> arrayList ;
     private LinkedList<String> ArticleIDs  = new LinkedList<>();// {"00001", "00002"};
