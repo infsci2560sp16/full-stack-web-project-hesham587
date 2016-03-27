@@ -28,7 +28,7 @@ public class ArticleController {
         get("/Article/:id", (req, res) -> {
 			String id = req.params(":id");
 			 
-                         arrayList=ArticleService.getOneArticle(id);
+                         arrayList= ArticleService.getOneArticle(id);
 			if (!arrayList.isEmpty()) {
 				return arrayList;
 			}
