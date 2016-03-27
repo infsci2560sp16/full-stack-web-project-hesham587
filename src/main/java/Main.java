@@ -20,7 +20,7 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 	
-		Object user = new ArticleControler(new ArticleService());
+		Object user = new ArticleController(new ArticleService());
 	
 	
 
