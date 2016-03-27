@@ -108,21 +108,21 @@ public class BooksService {
         return arrayList;
     }
     
-    public ArrayList<Map<String, String>> getOneArticl(String id){
+    public ArrayList<Map<String, String>> getOneArticle(String id){
         arrayList = new ArrayList<>();
         if(!id.equals("")){
 
             int length = ArticleIDs.size();
             for (int i = 0; i<length; i++){
                 if(id.equals(ArticleIDs.get(i))){
-                    book = new HashMap<String, String>();
-                    book.put("ArticleID",ArticlsIDs.get(i));
-                    book.put("ArticleTitle",ArticleTitle.get(i));
-                    book.put("BookAuthors",ArticleAuthors.get(i));
+                    article = new HashMap<String, String>();
+                    article.put("ArticleID",ArticlsIDs.get(i));
+                    article.put("ArticleTitle",ArticleTitle.get(i));
+                    article.put("BookAuthors",ArticleAuthors.get(i));
                    // book.put("BookCondition",BooksCondition.get(i));
                     //book.put("BookUniversity",BooksUniversity.get(i));
-                    book.put("ArticleDate",ArticleDate.get(i));  
-                    book.put("ArticleBody",ArticleBody.get(i));
+                    article.put("ArticleDate",ArticleDate.get(i));  
+                    article.put("ArticleBody",ArticleBody.get(i));
                   //  book.put("BookISBN13",BooksISBN13.get(i));
                     //book.put("BookISBN10",BooksISBN10.get(i));
                     //book.put("BookImages",BooksImages.get(i));
