@@ -32,7 +32,7 @@ public class ArticleService {
     //private String[] BooksISBN10 = {"0205021980", "1122334455"};
     //private LinkedList<String> BooksISBN10  = new LinkedList<>();
     private String[] ArticleImages = {"book1.jpg", "Book.JPG"};
-    //private LinkedList<String> BooksImages  = new LinkedList<>();
+    private LinkedList<String> ArticleImages  = new LinkedList<>();
     //private String[] BooksCourse = {"Human Factors in System Design", "Course Name"};
     //private LinkedList<String> BooksCourse  = new LinkedList<>();
     
