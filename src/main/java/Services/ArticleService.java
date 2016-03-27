@@ -43,8 +43,8 @@ public class articleService {
         ArticleTitle.add("Engineering Psychology and Human Performance");
         ArticleTitle.add("Some Book");
         
-        BooksAuthors.add("Christopher D. Wickens , Justin G. Hollands, Simon Banbury, Raja Parasuraman");
-        BooksAuthors.add("Many Authors");
+        ArticleAuthors.add("Christopher D. Wickens , Justin G. Hollands, Simon Banbury, Raja Parasuraman");
+        ArticleAuthors.add("Many Authors");
         
       //  BooksCondition.add("New");
         //BooksCondition.add("Used - Very Good");
