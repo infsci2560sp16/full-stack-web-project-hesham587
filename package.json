@@ -14,4 +14,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-w3c-html-validation": "^0.1.7"
   }
+  "scripts": {
+  "start": "node app.js"
+}
 }
