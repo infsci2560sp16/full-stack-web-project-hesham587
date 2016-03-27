@@ -89,17 +89,17 @@ public class ArticleService {
             article = new HashMap<String, String>();
             
             if(i <= 2){
-                Article.put("ArticleID",ArticleIDs.get(0));
-                Article.put("ArticleTitle",ArticleTitle.get(0));
-                Article.put("ArticleDate",ArticleDate.get(0));
-                Article.put("ArticleImages",ArticleImages.get(0));
-                Article.put("ArticleBody",ArticleBody.get(0)); 
+                article.put("ArticleID",ArticleIDs.get(0));
+                article.put("ArticleTitle",ArticleTitle.get(0));
+                article.put("ArticleDate",ArticleDate.get(0));
+                article.put("ArticleImages",ArticleImages.get(0));
+                article.put("ArticleBody",ArticleBody.get(0)); 
             }else{
-                  Article.put("ArticleID",ArticleIDs.get(1));
-                Article.put("ArticleTitle",ArticleTitle.get(1));
-                Article.put("ArticleDate",ArticleDate.get(1));
-                Article.put("ArticleImages",ArticleImages.get(1));
-                Article.put("ArticleBody",ArticleBody.get(1)); 
+                  article.put("ArticleID",ArticleIDs.get(1));
+                article.put("ArticleTitle",ArticleTitle.get(1));
+                article.put("ArticleDate",ArticleDate.get(1));
+                article.put("ArticleImages",ArticleImages.get(1));
+                article.put("ArticleBody",ArticleBody.get(1)); 
             }
             arrayList.add(article);
         }
