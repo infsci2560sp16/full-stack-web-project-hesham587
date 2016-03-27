@@ -20,9 +20,9 @@ public class ArticleController {
 
     public ArticleController(final ArticleService ArticleService) {
        
-        
+       
         get("/Article", (req, res) -> {
-            return ArticleService.getAllBooks();
+            return ArticleService.getAllArticle();
         }, gson::toJson);
 
         get("/Article/:id", (req, res) -> {
