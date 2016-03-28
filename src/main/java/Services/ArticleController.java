@@ -13,6 +13,9 @@ import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 import spark.Request;
+import java.net.URL;
+import javax.xml.parsers.DocumentBuilderFactory;
+import org.w3c.dom.Document;
 
 public class ArticleController {
     private static ArrayList<Map<String, String>> arrayList ;
@@ -37,7 +40,37 @@ public class ArticleController {
 			
 			return "[{\"" + id + "\":\"Could not find the Article you search for please try again. \"}]";
 		}, gson::toJson);
-    
-    }
+		
+  
+     get("/WSxml", (req, res) -> {
+            //Map<String, Object> data = new HashMap<>();
+          
+ //arrayList= articleService.getAllArticleXML();
+ res.type("text/xml");
+ return  articleService.getAllArticleXML();
+ //return articleService.getAllArticleXML();
+ 
+		
+        });
+		
+		
+	/*	get("/test", (req, res) -> {
+            Map<String, Object> data = new HashMap<>();
+            data.put("status", "live");
+            data.put("now", new Date());
+
+            String xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
+                            "<note>" +
+                                "<to>You</to>" +
+                                "<from>Me</from>" +
+                                "<heading>Reminder</heading>" +
+                                "<body>Don't forget me this weekend!</body>" +
+                            "</note>";
+            res.type("text/xml");
+            return xml;
+        });*/
+	
+	
+	}
 
 }

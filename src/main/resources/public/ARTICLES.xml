@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ARTICLES>
+<ARTICLE>
+<TITLE>You gotta touch the banana" for Wi-Fi access, says sys admin</TITLE>
+<AUTHOR>Lisa Vaas</AUTHOR>
+<DATE>August 24, 2014</DATE>
+<BODY>Here’s how it worked: The banana was wired to a Makey Makey circuit board and a cheap Raspberry Pi computer that dispensed an 8-hour personal password for guests to access the company’s captive Wi-Fi portal when a finger touch to the fruit authentication system provided the necessary micro-charge.
+What’s more, Danish network engineer Stefan Milo swore at one point that the banana was there to stay – it would never get swapped out, even after reaching the age of rich, compost-worthy brown:
+If you want Wi-Fi, you gotta touch it. No matter how smelly it is, YOU TOUCH IT!!
+You gotta touch the banana. If you can’t touch the banana, you gotta see the GIF.
+As Milo explained in his initial Reddit post last Monday, he was tasked with setting up the captive portal and creating the temporary password vouchers – in a spreadsheet.
+Well, he said, no thanks: he doesn’t do spreadsheets.
+He expounded in a chat with The Register:
+When you go to $corp, and the receptionist hands you a small piece of paper that someone printed out on an A4, and then spent time on cutting out into small pieces, I cringe.
+Even if you have a small voucher printer, it still involves the receptionist, installing of the printer, support when the printer driver effs up, etc. And it still involves paper – what is this? 1999? 
+So instead of time-warping back to the paper days, he spent a weekend setting up a script on a Raspberry Pi that generated a unique guest key on command and displayed the code on an attached display.
+it all took 8-10 hours, took up 20 lines of code, and cost him less than $100, including fabrication of an acrylic case.
+The script was triggered via the Makey Makey board, which alerted the Pi whenever it detected a voltage drop in the attached banana.
+The touch of a human finger created a tiny electrical connection, which then changed the banana’s capacitance – a change that could be detected by the circuit board.
+The Pi didn’t know it was taking orders from a piece of fruit. As far as it’s concerned, a banana is as good as a keyboard, or a mouse.
+The system can be powered by things non-banana, as well, as you can see in Makey Makey’s video, which shows the circuit board being switched by all sorts of household and culinary items: scissors, a slip-n-slide, a cream pie, or Jello, for example.
+As Milo’s image shows, the pin cable for the circuit board rests on the banana, and its USB stick connects it to the Pi.
+He posted this list of reasons as answer to the inevitable question – “Why?” 1.It’s fun 2.It’ll make people smile 3.It beats a static WPA password in funnyness
+4.When people leave our office, then can’t access our Wi-Fi because there’s no banana to touch
+When users touched the banana, they got a personal password good for 8 hours, all without pestering a receptionist, and all without reading a number off a kludgy spreadsheet.
+Milo says the Pi has 5,000 vouchers.
+He told The Register that the banana setup only served about five guests a week, but with a simple expansion of the voucher file (and regular banana changes), the setup could run for years on end, accommodating thousands of office guests.
+And why am I using past tense to talk about this authentication system, you may well ask?
+Because the day after he swore that the banana would live in rotten eternity, tethered to the Pi, with Milo ruling over the system as Lord of the Fruit Flies, the banana was no more, he said in a banana update: 
+It’s a croissant now. Bossman ate the banana.
+</BODY>
+<IMAGE>banana.png</IMAGE>
+</ARTICLE>
+<ARTICLE>
+<TITLE>Facebook 'Message Requests' lets you contact anyone, even if you're not friends</TITLE>
+<AUTHOR>Bob Dylan</AUTHOR>
+<DATE>August 24, 2014</DATE>
+<BODY>CSpeaking with random strangers just became a whole lot easier with a new service called “Message Requests.”
+No more will your idle Messenger musings be sent to the endless purgatory known as the “Other Inbox” – a place so obscure it didn’t even appear in iOS or Android renditions of the popular social network – when sent to non-friends or non-friends-of-friends.
+Instead, says Messenger chief David Marcus, such important missives will now be given the level of prominence they deserve, appearing as a message request along with an appropriate notification.
+Taking to his own Facebook account, Marcus wrote “Now, the only thing you need to talk to virtually anyone in the world, is their name,” before defining the one and only rule for the new Message Requests feature:
+ The rule is pretty simple: If you're friends on Facebook, if you have each other's contact info in your phone and have these synced, or if you have an existing open thread, the new messages from that sender will be routed to your inbox. 
+Everything else will now be a message request, minus spam attempts that we will continue to ruthlessly combat. 
+To help combat the threat of having a weirdo hassle you after a drunken chat in the pub, Facebook has designed Message Requests in a way that gives you just enough information to know who has contacted you – you’ll see their name, profile picture, some other publicly available information and a list of any mutual friends – as well as an ability to completely blow them off without them knowing whether you read their message or not.
+When you receive such a message you will have the option of responding to it – which will cause the message thread to be transferred to your normal inbox – or completely ignore it, in which case it will be hidden away in the Filtered Requests folder, along with anything Facebook has identified as being spam.
+And if you do delete or ignore one of these unsolicited messages, the sender will never be able to contact you again – an improvement of sorts over the current situation which may see you forced to exchange phone numbers or friend requests for what should be a one-off personal or business conversation.
+Talking to TechCrunch, Tony Leach, Messenger’s Product Manager, spun the release of Message Requests as an opportunity for Facebook users to connect with long-lost family members and kindly strangers:
+ We've heard so many stories like estranged parents trying to get back in touch, or you lost your wallet and someone trying to get in touch with you. 
+That's why we want to replace that with a system that makes it a lot easier to catch the messages that you want to see. 
+A level of openness where you can get in touch with anyone in the world but still have the control yourself of who contacts you and who can't. 
+ Of course Facebook itself will undoubtedly reap the benefits of an enhanced Messenger too – by allowing its users to make contact with any one of the 1.5 billion people already using the social network, uptake of Messenger is only likely to grow from its current base of 700 million active users.
+Describing the change to Messenger, which is due to roll out over the next few days, as “small,” Marcus suggested the “foundational development” was just the beginning as the Facebook team continues “to improve ways to find the people you want to communicate with.”
+Brits interested in taking advantage of the new feature may have to act quickly though – Facebook Messenger, along with the likes of Snapchat and WhatsApp, could still be under threat from Home Secretary Theresa May and the yet-to-be ratified Investigatory Powers Bill, which seeks to outlaw the use of encryption with some apps, as well as force service providers to hand communications data to authorities when asked for.
+</BODY>
+<IMAGE>facebook.png</IMAGE>
+</ARTICLE>
+<ARTICLE>
+<TITLE>Selfie + money + Snapchat = robbed! Don't flash your cash</TITLE>
+<AUTHOR>Paul Ducklin</AUTHOR>
+<DATE>August 24, 2014</DATE>
+<BODY> Not that you might fall off a cliff, or get eaten by a shark, or run over by a train while posing for that
+ 1,000,000-clicks selfie shot, although those are all risks to be aware of. The problem is the casually-taken selfie that gets just one view by the wrong person. One lousy, single, solitary view by someone who figures that he wants what you've got in the picture.
+Like a wedge of cash to which you proudly drew the world's attention.
+That's apparently what happened to a youngster in Florida, who posted a happy snap of himself with $280 in readies
+only to find himself at the pointy end of an intruder's knife.
+The 18-year-old was chilling at home, "playing video games", according to one account, when he heard the cleaner coming into the house, except that it wasn't the cleaner.
+Instead, the interloper was a 21-year-old man, allegedly one Fareid Said, who demanded the money he'd seen on Snapchat earlier in the day.
+The victim was relieved of both the money and his watch. The crook fled, only to be arrested soon afterwards.
+We assume the victim got his stuff back.WHAT TO DO? Don't flash your cash. This is standard advice for tourists, and it's obvious why. But it holds for all of us.
+ Like covering up your PIN when you pay for items on your card, the less that the people around know about how to defraud you, the better. 
+					 If in doubt, don't give it out. Think before you post anything to social media, and if you do, assume that everyone will see it, including your parents, boss, spouse, the police and every crook in the neighbourhood and beyond.  
+ </BODY>
+<IMAGE>snap.png</IMAGE>
+</ARTICLE>
+<ARTICLE>
+<TITLE>Police destroy evidence with 10 failed passcode attempts on iPhone</TITLE>
+<AUTHOR>Bob Dylan</AUTHOR>
+<DATE>USA</DATE>
+<BODY>In January 2014, a Massachusetts cop was swearing into his mobile phone while working a traffic detail at a construction site.
+The F bombs appeared to upset an elderly lady walking by, so a man on a nearby front porch asked the officer, Thomas Barboza, to stop swearing.
+The cop’s response: “Shut the f–k up and mind your own business." George Thompson’s response: he started recording Barboza on his iPhone. According to court documents, Barboza shoved 53-year-old Thompson to the ground, arrested him, handcuffed him, and put him in jail for a night.
+Police in the city of Fall River also tried to get into Thompson’s iPhone, where the footage of Barboza was stored. But all the police managed to do was to destroy the evidence, wiping the phone clean after entering the wrong password 10 times.
+As local paper The Herald News reported in 2014, an independent computer forensics company subsequently concluded that an internal security feature, activated when someone types in the wrong password 10 times, erased the iPhone’s contents before it was reset to factory settings on 8 January – the same day that a police detective tried to check out the contents of Thompson’s phone. 
+According to the federal civil rights lawsuit subsequently filed by Thompson, after Barboza noticed Thompson filming him, the officer “stormed” onto his yard and onto his porch, cursing and threatening, allegedly called Thompson a “f—ing welfare bum,” seized his phone, and arrested Thompson for “secretly” recording him.
+“Secret?” Nah, I don’t think so, the lawsuit said, pointing out that Barboza wrote in his report that at one point, Thompson told him:
+That’s right, I’m recording you. It matters that Thompson’s phone was out, not hidden, and that he repeatedly acknowledged recording Barboza, given that Massachusetts’ wiretap statute only prohibits secret recording.
+Nonetheless, Barboza said in his police report that he noticed Thompson was holding the “phone to his chest area in a hiding motion.”
+But he also admitted to telling Thompson that he was going to  f–k him hard on paper which has been interpreted as an admission that he intended to fabricate facts in his report.
+There appears to be no plan to prosecute Barboza or the Fall River Police Department for allegedly destroying evidence.
+Charges had been dropped against Thompson in April 2014, but he had to wait to get his phone back in May 2014, and only after he’d gotten a court order.
+According to the Bay State Examiner, police hung on to the phone because they wanted to investigate how it had been wiped.
+They had, in fact, tried to blame Thompson for the evidence destruction, saying that he must have restored the phone to factory settings remotely by using a cloud service such as iCloud.
+It was after that claim that an outside forensics service said that no, it was the police’s 10 failed passcode attempts that did the trick.
+Barboza had come out of the encounter with a slap on the wrist: a one-day suspension and a 15-day prohibition from street details, with Police Chief Daniel Racine saying that Barboza’s actions were “unprofessional and not at the level we expect and demand.”
+Four months after Thompson’s arrest in January 2014, the Fall River Police Department initiated a new policy in which “extraordinary” circumstances must justify a wiretapping arrest.
+In May 2014, an appeals court confirmed that people’s right to record video of police in public is protected by the First Amendment.
+That’s far from the final word, however: earlier this month, Republican Senator John Kavanagh, from Arizona, proposed a bill that would put a 20-foot no-filming zone around cops, including penalties of $300 and up to six months in jail for filming closer than that.
+Other legislative actions around recording police have included similar legislation proposed in Texas last year, this one with a 25-foot no-filming zone.
+That one was dropped after widespread opposition. Colorado and California are coming at the issue from the opposite side, approving measures to protect the public from retaliation for recording police.
+</BODY>
+<IMAGE>iphone.png</IMAGE>
+</ARTICLE>
+</ARTICLES>

@@ -13,6 +13,9 @@ import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 import Services.*;
+
+
+
 public class Main {
 
   public static void main(String[] args) {
@@ -25,7 +28,12 @@ public class Main {
 	
 
     get("/hello", (req, res) -> "Hello World, this me Hisham");
+	
+	
+get("/validate", (req, res) ->{
+	return (XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeRequest.xml")); /*+ XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeResponse.xml"));*/
 
+});
     get("/index", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");

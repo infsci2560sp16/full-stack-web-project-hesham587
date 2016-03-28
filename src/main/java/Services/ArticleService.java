@@ -1,7 +1,14 @@
 package Services;
-
+import java.net.*;
 import java.util.*;
-
+import java.io.*;
+import javax.xml.*;
+import org.w3c.dom.*;
+import java.lang.*;
+import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.parsers.DocumentBuilderFactory;
 public class ArticleService {
     private static HashMap<String, String> article ;
     private static ArrayList<Map<String, String>> arrayList ;
@@ -150,6 +157,38 @@ public class ArticleService {
         return arrayList;
     
 	}
-	}
+	
+	
+	public String getAllArticleXML(){
+		Document doc=null;
+		String output= null;
+		try {
+			
+			 doc = loadTestDocument("http://localhost:5000/ARTICLES.xml");
+			 TransformerFactory tf = TransformerFactory.newInstance();
+Transformer transformer = tf.newTransformer();
+transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
+StringWriter writer = new StringWriter();
+transformer.transform(new DOMSource(doc), new StreamResult(writer));
+ output = writer.getBuffer().toString().replaceAll("\n|\r", "");
+       //String txt = System.out.println(doc);
+       
+      
+		}
+		catch (Exception e) {
+			
+		}
+
+return  output;
+
+}
+
+public static Document loadTestDocument(String url) throws Exception {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        return factory.newDocumentBuilder().parse(new URL(url).openStream());
+    }
+	
 
 
+}
