@@ -1,4 +1,5 @@
 package Services;
+
 import com.google.gson.Gson;
 import java.sql.*;
 import java.util.HashMap;
@@ -19,15 +20,17 @@ public class ArticleController {
 
     public ArticleController(final ArticleService ArticleService) {
        
-       
+        
         get("/Article", (req, res) -> {
+			
             return ArticleService.getAllArticle();
         }, gson::toJson);
 
-        get("/Article/:id", (req, res) -> {
-			String id = req.params(":id");
-			 
-                         arrayList= ArticleService.getOneArticle(id);
+        get("/Article/id", (req, res) -> {
+			
+			String id = req.params("id");
+
+			 arrayList= ArticleService.getOneArticle(id);
 			if (!arrayList.isEmpty()) {
 				return arrayList;
 			}
