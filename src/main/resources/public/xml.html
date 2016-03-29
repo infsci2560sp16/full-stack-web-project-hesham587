@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
-<style>
-table,th,td {
-  border : 1px solid black;
-  border-collapse: collapse;
-}
-th,td {
-  padding: 5px;
-}
-</style>
-<body>
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+ 
+	<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" />
+<script src="js/comments.js"></script>
+    
 
 
-<br><br>
-<table id="demo"></table>
+
+
+</head>
 
 <body onload="loadDoc()">
+<div class="header">
+     
 
+<img src="banner.jpg" alt="Smily Face">
+
+</div>
+<div>
+<ul>
+  <li><a href="home.html">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+  <li><a href="about.html">About</a></li>
+      <li class="left"><a href="login.html">Login</a></li>
+	<li class="left"><a href="signup.html">Signup</a></li>
+  </ul>
+
+
+</div>
+
+<br><br>
+
+
+
+<div id="demo" class="col-3-6">
+ 
 
 
 <script>
@@ -28,24 +55,31 @@ th,td {
       myFunction(xhttp);
     }
   };
-  xhttp.open("GET", "ARTICLES.xml", true);
+  xhttp.open("GET", "/WSxml", true);
   xhttp.send();
 }
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>TITLE</th><th>AUTHOR</th></tr>";
+  var content= "<div><div class='row'><div>";
   var x = xmlDoc.getElementsByTagName("ARTICLE");
   for (i = 0; i <x.length; i++) { 
-    table += "<tr><td>" +
-    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-    "</td><td>" +
-    x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue +
-    "</td></tr>";
+    content += "<a href=" + x[i].getElementsByTagName("URL")[0].childNodes[0].nodeValue + "><h2>" + 
+	x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</h2> </a>  <p> Posted by <a >" +
+	x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</a> on " +
+	x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue + "</p>";
   }
-  document.getElementById("demo").innerHTML = table;
+  content += "</div></div></div></div>";
+  document.getElementById("demo").innerHTML = content;
 }
 </script>
+
+   <div class="row">
+
+</div>
+    <div class="footer">
+<p>Copyright.</p>
+</div>
 
 </body>
 </html>

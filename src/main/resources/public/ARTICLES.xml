@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ARTICLES>
 <ARTICLE>
+<ID>0001</ID>
 <TITLE>You gotta touch the banana" for Wi-Fi access, says sys admin</TITLE>
 <AUTHOR>Lisa Vaas</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -31,8 +31,10 @@ Because the day after he swore that the banana would live in rotten eternity, te
 It’s a croissant now. Bossman ate the banana.
 </BODY>
 <IMAGE>banana.png</IMAGE>
+<URL>banana.html</URL>
 </ARTICLE>
 <ARTICLE>
+<ID>0002</ID>
 <TITLE>Facebook 'Message Requests' lets you contact anyone, even if you're not friends</TITLE>
 <AUTHOR>Bob Dylan</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -54,8 +56,10 @@ Describing the change to Messenger, which is due to roll out over the next few d
 Brits interested in taking advantage of the new feature may have to act quickly though – Facebook Messenger, along with the likes of Snapchat and WhatsApp, could still be under threat from Home Secretary Theresa May and the yet-to-be ratified Investigatory Powers Bill, which seeks to outlaw the use of encryption with some apps, as well as force service providers to hand communications data to authorities when asked for.
 </BODY>
 <IMAGE>facebook.png</IMAGE>
+<URL>facebook.html</URL>
 </ARTICLE>
 <ARTICLE>
+<ID>0003</ID>
 <TITLE>Selfie + money + Snapchat = robbed! Don't flash your cash</TITLE>
 <AUTHOR>Paul Ducklin</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -72,8 +76,10 @@ We assume the victim got his stuff back.WHAT TO DO? Don't flash your cash. This 
 					 If in doubt, don't give it out. Think before you post anything to social media, and if you do, assume that everyone will see it, including your parents, boss, spouse, the police and every crook in the neighbourhood and beyond.  
  </BODY>
 <IMAGE>snap.png</IMAGE>
+<URL>post.html</URL>
 </ARTICLE>
 <ARTICLE>
+<ID>0004</ID>
 <TITLE>Police destroy evidence with 10 failed passcode attempts on iPhone</TITLE>
 <AUTHOR>Bob Dylan</AUTHOR>
 <DATE>USA</DATE>
@@ -100,5 +106,6 @@ Other legislative actions around recording police have included similar legislat
 That one was dropped after widespread opposition. Colorado and California are coming at the issue from the opposite side, approving measures to protect the public from retaliation for recording police.
 </BODY>
 <IMAGE>iphone.png</IMAGE>
+<URL>iphone.html</URL>
 </ARTICLE>
 </ARTICLES>
