@@ -164,7 +164,7 @@ public class ArticleService {
 		String output= null;
 		try {
 			
-			 doc = loadTestDocument("http://localhost:5000/ARTICLES.xml");
+			 doc = loadTestDocument("https://hidden-savannah-88916.herokuapp.com/ARTICLES.xml");
 			 TransformerFactory tf = TransformerFactory.newInstance();
 Transformer transformer = tf.newTransformer();
 transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
