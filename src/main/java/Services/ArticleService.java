@@ -9,6 +9,15 @@ import javax.xml.transform.*;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+
+
 public class ArticleService {
     private static HashMap<String, String> article ;
     private static ArrayList<Map<String, String>> arrayList ;
@@ -190,5 +199,96 @@ public static Document loadTestDocument(String url) throws Exception {
     }
 	
 
+	
+	
+public static String getoneArticleXML(String id){
+		String output = null;
+	try {
+
+
+
+
+File ARTICLES = new File("ARTICLES.xml");
+
+DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+
+DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+
+Document doc = loadTestDocument("https://hidden-savannah-88916.herokuapp.com/ARTICLES.xml");//dBuilder.parse(ARTICLES);
+
+
+doc.getDocumentElement().normalize();
+
+//System.out.println("root of xml file" + doc.getDocumentElement().getNodeName());
+
+NodeList nodes = doc.getElementsByTagName("ARTICLE");
+
+//System.out.println("==========================");
+
+
+
+
+for (int i = 0; i < nodes.getLength(); i++) {
+
+Node node = nodes.item(i);
+
+//output="inside the loop";
+
+
+//if (node.getNodeType() != Node.ELEMENT_NODE) {
+	
+//output="inside the 1st IF";	
+//}
+
+//else{
+
+Element element = (Element) node;
+
+//output="inside the 1st IF";
+ if (id.equals(getValue("ID", element))) {// (id == getValue("ID", element)){
+	
+
+	output = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + "<ARTICLES> <ARTICLE>" + "<ID>" + getValue("ID", element)+ "</ID>" + "<TITLE>" + getValue("TITLE", element)+ "</TITLE>" + "<AUTHOR>" + getValue("AUTHOR", element)+ "</AUTHOR>" + 
+								 "<DATE>" + getValue("DATE", element) + "</DATE>" +
+								 "<BODY>" + getValue("BODY", element) + "</BODY>" +
+								 "<IMAGE>" + getValue("IMAGE", element) + "</IMAGE>" +
+								 "<URL>" + getValue("URL", element) + "</URL>" +
+                           "</ARTICLE> </ARTICLES>";
+
+	
+}
+
+
+
+//}
+
+
+
+	}} catch (Exception ex) {
+
+	ex.printStackTrace();}
+	
+	
+	return output;
+	}
+
+
+public static String getValue(String tag, Element element) {
+NodeList nodes = element.getElementsByTagName(tag).item(0).getChildNodes();
+Node node = (Node) nodes.item(0);
+return node.getNodeValue();
 
 }
+}
+
+	
+
+
+
+
+
+	
+	
+
+

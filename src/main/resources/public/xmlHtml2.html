@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+ 
+	<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" />
+<script src="js/comments.js"></script>
+    
+
+
+
+
+</head>
+
+<body onload="loadDoc()">
+<div class="header">
+     
+
+<img src="banner.jpg" alt="Smily Face">
+
+</div>
+<div>
+<ul>
+  <li><a href="home.html">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+  <li><a href="about.html">About</a></li>
+      <li class="left"><a href="login.html">Login</a></li>
+	<li class="left"><a href="signup.html">Signup</a></li>
+  </ul>
+
+
+</div>
+
+<br><br>
+
+
+
+<div id="demo" class="col-3-6">
+
+
+</div>
+
+
+<script>
+
+ function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      myFunction(xhttp);
+    }
+  };
+  xhttp.open("GET", "/WSxml/3", true);
+  xhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+    var x = xmlDoc.getElementsByTagName("ARTICLE");
+	
+  var content = "<div><img id='Postimg' src='banana.png' alt='Smily Face'><div id='snap'  ><div><div><h1>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</h1>" +
+   "<span class='meta'>Posted by <a href='#'> " + x[0].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</a> on " + x[0].getElementsByTagName("DATE")[0].childNodes[0].nodeValue +"</span></div></div>" +
+  "<div  ><div class='row'><div> " + x[0].getElementsByTagName("BODY")[0].childNodes[0].nodeValue + " </div></div></div></div>";
+   
+	  document.getElementById("demo").innerHTML = content;
+}
+</script>
+
+   <div class="row">
+
+</div>
+    <div class="footer">
+<p>Copyright.</p>
+</div>
+
+</body>
+</html>

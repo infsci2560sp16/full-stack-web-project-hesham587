@@ -52,25 +52,28 @@ public class ArticleController {
  
 		
         });
-		
-		
-	/*	get("/test", (req, res) -> {
-            Map<String, Object> data = new HashMap<>();
-            data.put("status", "live");
-            data.put("now", new Date());
+		  get("/WSxml/:d", (req, res) -> {
+         
+String id = req.params(":d");
+if (id == null){
+	return id ;
+	
+}
 
-            String xml =    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" +
-                            "<note>" +
-                                "<to>You</to>" +
-                                "<from>Me</from>" +
-                                "<heading>Reminder</heading>" +
-                                "<body>Don't forget me this weekend!</body>" +
-                            "</note>";
-            res.type("text/xml");
-            return xml;
-        });*/
-	
-	
+	String result =articleService.getoneArticleXML(id);
+
+	if (result != null){
+		res.type("text/xml");
+ return  result;
+ 
+		
 	}
+		else {
+			return "error occured!!" + id;
+		} 
+ 
+	
+	});
 
+}
 }

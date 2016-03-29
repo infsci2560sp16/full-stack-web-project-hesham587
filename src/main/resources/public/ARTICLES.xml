@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ARTICLES>
 <ARTICLE>
-<ID>0001</ID>
+<ID>1</ID>
 <TITLE>You gotta touch the banana" for Wi-Fi access, says sys admin</TITLE>
 <AUTHOR>Lisa Vaas</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -34,7 +34,7 @@ It’s a croissant now. Bossman ate the banana.
 <URL>banana.html</URL>
 </ARTICLE>
 <ARTICLE>
-<ID>0002</ID>
+<ID>2</ID>
 <TITLE>Facebook 'Message Requests' lets you contact anyone, even if you're not friends</TITLE>
 <AUTHOR>Bob Dylan</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -59,7 +59,7 @@ Brits interested in taking advantage of the new feature may have to act quickly 
 <URL>facebook.html</URL>
 </ARTICLE>
 <ARTICLE>
-<ID>0003</ID>
+<ID>3</ID>
 <TITLE>Selfie + money + Snapchat = robbed! Don't flash your cash</TITLE>
 <AUTHOR>Paul Ducklin</AUTHOR>
 <DATE>August 24, 2014</DATE>
@@ -79,7 +79,7 @@ We assume the victim got his stuff back.WHAT TO DO? Don't flash your cash. This 
 <URL>post.html</URL>
 </ARTICLE>
 <ARTICLE>
-<ID>0004</ID>
+<ID>4</ID>
 <TITLE>Police destroy evidence with 10 failed passcode attempts on iPhone</TITLE>
 <AUTHOR>Bob Dylan</AUTHOR>
 <DATE>USA</DATE>
