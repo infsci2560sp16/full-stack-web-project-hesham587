@@ -82,7 +82,7 @@ return "getNumberOfArticles = " + articleService.getNumberOfArticles() + "getArt
 });
 
 post("/test", (req, res) ->{
-	// Integer ArticleIDs = articleService.getNumberOfArticles() + 1;
+	 Integer ArticleIDs = articleService.getNumberOfArticles() + 1;
      String   ArticleTitle = req.queryParams("title");
      String   ArticleAuthors = req.queryParams("author");
      // String  ArticleDate = req.queryParams("date");
@@ -95,7 +95,7 @@ post("/test", (req, res) ->{
             
             String cont = articleService.createArticle(ArticleTitle, ArticleAuthors, date.toString(), ArticleBody);
             if(!cont.equals("")){
-            return cont + "+++"+ articleService.getArticleTitle(); 
+            return "To check the recently entered article in Json format by using a web service <a href='Article/"+ ArticleIDs +"'>click here</a> <p> OR </p> <p> To check the recently entered article in HTML page that calls another web serivce <a href='jsonHtml2.html?id="+ ArticleIDs +"'>click here</a> </p>"; 
 			}
             return "Error";
 	});

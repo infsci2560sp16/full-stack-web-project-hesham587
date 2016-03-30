@@ -65,6 +65,17 @@ and open the template in the editor.
                     success: function (result) {
                         var data = JSON.parse(result);
 						var size = data.length;
+						if (id<size){
+										var div = document.createElement('div');
+										//div.className = 'class="col-9">';
+
+									div.innerHTML ="<p>There is no Article with this id </p>" ;
+								document.getElementById(beforeContent).appendChild(div);												
+
+												
+						
+						}
+						else{
 						var divBefore="";
 						for(i=0; i<size; i++){
 							if(i == 0){
@@ -79,16 +90,16 @@ and open the template in the editor.
 								divLeft.setAttribute("class", "col-1 col-m-1 colxmv books left");
 								div.appendChild(divLeft);
 							}
-							var divBook = document.createElement("div");
-								divBook.setAttribute("class", "col-u col-m-u colu books 1");
-								divBook.setAttribute("id", i);
-								div.appendChild(divBook);
-								document.getElementById(i).innerHTML =  '<a href="post.html" ><img id="Postimg" src="'+data[i].ArticleImages+'"'+
+							var divArticle = document.createElement("div");
+								divArticle.setAttribute("class", "col-u col-m-u colu books 1");
+								divArticle.setAttribute("id", i);
+								div.appendChild(divArticle);
+								document.getElementById(i).innerHTML =  '<img id="Postimg" src="'+data[i].ArticleImages+'"'+
 								'alt="'+data[i].ArticleTitle+'"><h2>'+data[i].ArticleTitle+'</h2> <div><div class=row><div>  '+ data[i].ArticleBody + ' </div></div></div>'+
-								'<h3> Posted by '+data[i].ArticleAuthors+'</h3><h4> Posted on '+data[i].ArticleDate+'</h4></a>';
+								'<h3> Posted by '+data[i].ArticleAuthors+'</h3><h4> Posted on '+data[i].ArticleDate+'</h4>';
 							
 						
-						}
+						}}
 						
                         
                     }});
