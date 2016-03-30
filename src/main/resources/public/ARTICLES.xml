@@ -2,7 +2,7 @@
 <articles
 xmlns="http://www.w3schools.com"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://localhost:5000 articles.xsd">
+xsi:schemaLocation="https://hidden-savannah-88916.herokuapp.com articles.xsd">
 <article>
 <id>1</id>
 <title>You gotta touch the banana" for Wi-Fi access, says sys admin</title>
