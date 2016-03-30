@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>add article</title>
+
+
+  
+	<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog.css" />
+<script src="js/comments.js"></script>
+    
+
+
+
+
+</head>
+
+<body>
+<div class="header">
+   
+<img src="banner.jpg" alt="Smily Face">
+</div>
+<div>
+ 
+  <ul>
+  <li><a href="home.html">Home</a></li>
+    <li><a href="search.html">Search</a></li>
+  <li><a href="about.html">About</a></li>
+      <li class="left"><a href="login.html">Login</a></li>
+	<li class="left"><a href="signup.html">Signup</a></li>
+  </ul>
+
+
+</div>
+  <form action="/test" method="POST">
+				  <div >
+					<h1> Add Article </h1>
+				  </div>
+				  
+				  <div>
+					<label for="title" class="col-4 col-m-4 formLabel">Article Title</label>
+
+					<div class="col-8 col-m-8 formDivs" >
+						<input id="title" class='AddingForm' name="title"  type='text' required>
+					</div>
+				  </div>
+				  
+				   <div class="row form">
+					<label for="author" class="col-4 col-m-4 formLabel lablebook">Author's Names</label>
+
+					<div class="col-8 col-m-8 formDivs" >
+						<input id="author" class='AddingForm' name="author" type='text' required>
+					</div>
+				  </div>
+				  
+				  <div class="row form">
+					<label for="body" class="col-4 col-m-4 formLabel lablebook">The Article</label>
+
+					<div class="col-8 col-m-8 formDivs" >
+						
+						<input id="body" name="body"  cols="300" rows="5" class="col-10" placeholder="Type your comment here... " required>
+					</div>
+				  </div>
+				  
+				  
+				 
+				 
+				  <div class="Signup">
+					<input type="submit" name="add" class="button button-block" value="Add Article" class="signUp">
+				  </div>
+			</form>
+
+
+
+
+
+
+</div>
+ <div class="row">
+
+</div>
+    <div class="footer">
+<p>Copyright.</p>
+</div>
+
+
+
+</body>
+
+</html>

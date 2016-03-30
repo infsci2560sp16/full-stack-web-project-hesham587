@@ -11,7 +11,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Signup</title>
+        <title>json</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet"  type="text/css" href="stylesheets/stylesheet.css" />
@@ -77,8 +77,8 @@ and open the template in the editor.
 								divBook.setAttribute("class", "col-u col-m-u colu books 1");
 								divBook.setAttribute("id", i);
 								div.appendChild(divBook);
-								document.getElementById(i).innerHTML =  '<a href="test2/'+ data[i].ArticleIDs +'" ><img id="Postimg" src="'+data[i].ArticleImages+'"'+
-								'alt="'+data[i].ArticleTitle+'"><h2>'+data[i].ArticleTitle+'</h2>'+
+								document.getElementById(i).innerHTML = '<a href="jsonHtml2.html?id='+ data[i].ArticleIDs+'" ><img id="Postimg" src="'+data[i].ArticleImages+'"'+
+								'alt="'+data[i].ArticleTitle+'"><h2>'+data[i].ArticleTitle+'</h2> <div><div class=row><div>  '+ data[i].ArticleBody + ' </div></div></div>'+
 								'<h3> Posted by '+data[i].ArticleAuthors+'</h3><h4> Posted on '+data[i].ArticleDate+'</h4></a>';
 							
 						

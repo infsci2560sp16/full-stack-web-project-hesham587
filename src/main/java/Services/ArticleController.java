@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Date;
+import static spark.Spark.*;
 
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
@@ -31,7 +32,8 @@ public class ArticleController {
 
         get("/Article/:id", (req, res) -> {
 			
-			String id = req.params(":id");
+			Integer id = Integer.parseInt(req.params(":id"));
+
 
 			 arrayList= articleService.getOneArticle(id);
 			if (!arrayList.isEmpty()) {
@@ -74,6 +76,30 @@ if (id == null){
  
 	
 	});
+	get("/check", (req, res) ->{
+//	return (XMLValidation.validateXMLSchema("articles.xsd", "articles.xml")); /*+ XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeResponse.xml"));*/
+return "getNumberOfArticles = " + articleService.getNumberOfArticles() + "getArticleTitle= " + articleService.getArticleTitle();
+});
+
+post("/test", (req, res) ->{
+	// Integer ArticleIDs = articleService.getNumberOfArticles() + 1;
+     String   ArticleTitle = req.queryParams("title");
+     String   ArticleAuthors = req.queryParams("author");
+     // String  ArticleDate = req.queryParams("date");
+     String   ArticleBody = req.queryParams("body");
+	//	String   ArticleImages = req.queryParams("image");
+		//String   ArticleBody = req.queryParams("body");
+		Date date = new Date();
+
+           
+            
+            String cont = articleService.createArticle(ArticleTitle, ArticleAuthors, date.toString(), ArticleBody);
+            if(!cont.equals("")){
+            return cont + "+++"+ articleService.getArticleTitle(); 
+			}
+            return "Error";
+	});
+
 
 }
 }

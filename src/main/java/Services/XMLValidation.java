@@ -20,7 +20,7 @@ public class XMLValidation {
       
       }*/
    
-    public static boolean validateXMLSchema(String xsdPath, String xmlPath){
+    public static String validateXMLSchema(String xsdPath, String xmlPath){
         
         try {
             SchemaFactory factory = 
@@ -30,8 +30,8 @@ public class XMLValidation {
             validator.validate(new StreamSource(new File(xmlPath)));
         } catch (IOException | SAXException e) {
             System.out.println("Exception: "+e.getMessage());
-            return false;
+            return "not Valid or Error occured" ;
         }
-    	 return true;
+    	 return "Valid---" ;
 		       }
 }

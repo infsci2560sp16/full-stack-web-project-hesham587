@@ -39,8 +39,14 @@
    <div >
         <div class="row">
             <div>
+			
+			
+				
+			
                 <div>
-                    <a href="post.html">
+				
+
+  <a href="post.html">
                         <h2>
                           ${article1}
                         </h2>

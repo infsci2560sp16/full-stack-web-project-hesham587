@@ -31,7 +31,7 @@ public class Main {
 	
 	
 get("/validate", (req, res) ->{
-	return (XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeRequest.xml")); /*+ XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeResponse.xml"));*/
+	return (XMLValidation.validateXMLSchema("articles.xsd", "articles.xml")); /*+ XMLValidation.validateXMLSchema("http://localhost:5000/Employee.xsd", "http://localhost:5000/EmployeeResponse.xml"));*/
 
 });
     get("/index", (request, response) -> {
@@ -44,7 +44,9 @@ get("/validate", (req, res) ->{
 		//-------------------------------------------------------------
 		  get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("article1", "This is a freemarker field:Selfie + money + Snapchat = robbed! Don’t flash your cash…");
+           // attributes.put("articles", new String[]{"Selfie + money + Snapchat = robbed! Don't flash your cash...", "Police destroy evidence with 10 failed passcode attempts on iPhone","Facebook 'Message Requests' lets you contact anyone, even if you're not friends","You gotta touch the banana for Wi-Fi access, says sys admin"});
+			
+			attributes.put("article1", "This is a freemarker field:Selfie + money + Snapchat = robbed! Don't flash your cash...");
 			 attributes.put("author1", "Paul Ducklin ");
 			 attributes.put("date1", "September 24, 2014");
     attributes.put("article2", " This is a freemarker field: Police destroy evidence with 10 failed passcode attempts on iPhone");
@@ -58,10 +60,37 @@ get("/validate", (req, res) ->{
 			  attributes.put("date4", "on July 8, 2014");
 		//  attributes.put("article5", "Hello World!");
 		  //  attributes.put("article6", "Hello World!");
+		  
+		  
             return new ModelAndView(attributes, "home.ftl");
         }, new FreeMarkerEngine());
 		//----------------------------------------------------------------------------------
-
+ get("/home2", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+           // attributes.put("articles", new String[]{"Selfie + money + Snapchat = robbed! Don't flash your cash...", "Police destroy evidence with 10 failed passcode attempts on iPhone","Facebook 'Message Requests' lets you contact anyone, even if you're not friends","You gotta touch the banana for Wi-Fi access, says sys admin"});
+			
+			attributes.put("article1", "This is a freemarker field:Selfie + money + Snapchat = robbed! Don't flash your cash...");
+			 attributes.put("author1", "Paul Ducklin ");
+			 attributes.put("date1", "September 24, 2014");
+    attributes.put("article2", " This is a freemarker field: Police destroy evidence with 10 failed passcode attempts on iPhone");
+	 attributes.put("author2", "Lisa Vaas");
+	  attributes.put("date2", "September 18, 2014");
+	attributes.put("article3", " This is a freemarker field:  Facebook 'Message Requests' lets you contact anyone, even if you're not friends");
+		 attributes.put("author3", "Lee Munson");
+		  attributes.put("date3", "on August 24, 2014");
+	    attributes.put("article4", " This is a freemarker field: You gotta touch the banana for Wi-Fi access, says sys admin");
+			 attributes.put("author4", "Lisa Vaas");
+			  attributes.put("date4", "on July 8, 2014");
+		//  attributes.put("article5", "Hello World!");
+		  //  attributes.put("article6", "Hello World!");
+		  
+		  
+            return new ModelAndView(attributes, "home.ftl");
+        }, new FreeMarkerEngine());
+		
+		
+		
+		//---------------------------------------------------------------
     get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();

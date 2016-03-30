@@ -62,12 +62,12 @@ function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
   var content= "<div><div class='row'><div>";
-  var x = xmlDoc.getElementsByTagName("ARTICLE");
+  var x = xmlDoc.getElementsByTagName("article");
   for (i = 0; i <x.length; i++) { 
-    content += "<a href=" + x[i].getElementsByTagName("URL")[0].childNodes[0].nodeValue + "><h2>" + 
-	x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</h2> </a>  <p> Posted by <a >" +
-	x[i].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</a> on " +
-	x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue + "</p>";
+    content += "<a href=xmlHtml2.html?id=" + x[i].getElementsByTagName("id")[0].childNodes[0].nodeValue + "><h2>" + 
+	x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</h2> </a>  <p> Posted by <a >" +
+	x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue + "</a> on " +
+	x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue + "</p>";
   }
   content += "</div></div></div></div>";
   document.getElementById("demo").innerHTML = content;

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ARTICLES>
-<ARTICLE>
-<ID>1</ID>
-<TITLE>You gotta touch the banana" for Wi-Fi access, says sys admin</TITLE>
-<AUTHOR>Lisa Vaas</AUTHOR>
-<DATE>August 24, 2014</DATE>
-<BODY>Here’s how it worked: The banana was wired to a Makey Makey circuit board and a cheap Raspberry Pi computer that dispensed an 8-hour personal password for guests to access the company’s captive Wi-Fi portal when a finger touch to the fruit authentication system provided the necessary micro-charge.
+<articles
+xmlns="http://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://localhost:5000 articles.xsd">
+<article>
+<id>1</id>
+<title>You gotta touch the banana" for Wi-Fi access, says sys admin</title>
+<author>Lisa Vaas</author>
+<date>2014-08-03</date>
+<body>Here’s how it worked: The banana was wired to a Makey Makey circuit board and a cheap Raspberry Pi computer that dispensed an 8-hour personal password for guests to access the company’s captive Wi-Fi portal when a finger touch to the fruit authentication system provided the necessary micro-charge.
 What’s more, Danish network engineer Stefan Milo swore at one point that the banana was there to stay – it would never get swapped out, even after reaching the age of rich, compost-worthy brown:
 If you want Wi-Fi, you gotta touch it. No matter how smelly it is, YOU TOUCH IT!!
 You gotta touch the banana. If you can’t touch the banana, you gotta see the GIF.
@@ -29,16 +32,16 @@ He told The Register that the banana setup only served about five guests a week,
 And why am I using past tense to talk about this authentication system, you may well ask?
 Because the day after he swore that the banana would live in rotten eternity, tethered to the Pi, with Milo ruling over the system as Lord of the Fruit Flies, the banana was no more, he said in a banana update: 
 It’s a croissant now. Bossman ate the banana.
-</BODY>
-<IMAGE>banana.png</IMAGE>
-<URL>banana.html</URL>
-</ARTICLE>
-<ARTICLE>
-<ID>2</ID>
-<TITLE>Facebook 'Message Requests' lets you contact anyone, even if you're not friends</TITLE>
-<AUTHOR>Bob Dylan</AUTHOR>
-<DATE>August 24, 2014</DATE>
-<BODY>CSpeaking with random strangers just became a whole lot easier with a new service called “Message Requests.”
+</body>
+<image>banana.png</image>
+<url>banana.html</url>
+</article>
+<article>
+<id>2</id>
+<title>Facebook 'Message Requests' lets you contact anyone, even if you're not friends</title>
+<author>Bob Dylan</author>
+<date>2014-08-03</date>
+<body>CSpeaking with random strangers just became a whole lot easier with a new service called “Message Requests.”
 No more will your idle Messenger musings be sent to the endless purgatory known as the “Other Inbox” – a place so obscure it didn’t even appear in iOS or Android renditions of the popular social network – when sent to non-friends or non-friends-of-friends.
 Instead, says Messenger chief David Marcus, such important missives will now be given the level of prominence they deserve, appearing as a message request along with an appropriate notification.
 Taking to his own Facebook account, Marcus wrote “Now, the only thing you need to talk to virtually anyone in the world, is their name,” before defining the one and only rule for the new Message Requests feature:
@@ -54,16 +57,16 @@ A level of openness where you can get in touch with anyone in the world but stil
  Of course Facebook itself will undoubtedly reap the benefits of an enhanced Messenger too – by allowing its users to make contact with any one of the 1.5 billion people already using the social network, uptake of Messenger is only likely to grow from its current base of 700 million active users.
 Describing the change to Messenger, which is due to roll out over the next few days, as “small,” Marcus suggested the “foundational development” was just the beginning as the Facebook team continues “to improve ways to find the people you want to communicate with.”
 Brits interested in taking advantage of the new feature may have to act quickly though – Facebook Messenger, along with the likes of Snapchat and WhatsApp, could still be under threat from Home Secretary Theresa May and the yet-to-be ratified Investigatory Powers Bill, which seeks to outlaw the use of encryption with some apps, as well as force service providers to hand communications data to authorities when asked for.
-</BODY>
-<IMAGE>facebook.png</IMAGE>
-<URL>facebook.html</URL>
-</ARTICLE>
-<ARTICLE>
-<ID>3</ID>
-<TITLE>Selfie + money + Snapchat = robbed! Don't flash your cash</TITLE>
-<AUTHOR>Paul Ducklin</AUTHOR>
-<DATE>August 24, 2014</DATE>
-<BODY> Not that you might fall off a cliff, or get eaten by a shark, or run over by a train while posing for that
+</body>
+<image>facebook.png</image>
+<url>facebook.html</url>
+</article>
+<article>
+<id>3</id>
+<title>Selfie + money + Snapchat = robbed! Don't flash your cash</title>
+<author>Paul Ducklin</author>
+<date>2014-08-03</date>
+<body> Not that you might fall off a cliff, or get eaten by a shark, or run over by a train while posing for that
  1,000,000-clicks selfie shot, although those are all risks to be aware of. The problem is the casually-taken selfie that gets just one view by the wrong person. One lousy, single, solitary view by someone who figures that he wants what you've got in the picture.
 Like a wedge of cash to which you proudly drew the world's attention.
 That's apparently what happened to a youngster in Florida, who posted a happy snap of himself with $280 in readies
@@ -74,16 +77,16 @@ The victim was relieved of both the money and his watch. The crook fled, only to
 We assume the victim got his stuff back.WHAT TO DO? Don't flash your cash. This is standard advice for tourists, and it's obvious why. But it holds for all of us.
  Like covering up your PIN when you pay for items on your card, the less that the people around know about how to defraud you, the better. 
 					 If in doubt, don't give it out. Think before you post anything to social media, and if you do, assume that everyone will see it, including your parents, boss, spouse, the police and every crook in the neighbourhood and beyond.  
- </BODY>
-<IMAGE>snap.png</IMAGE>
-<URL>post.html</URL>
-</ARTICLE>
-<ARTICLE>
-<ID>4</ID>
-<TITLE>Police destroy evidence with 10 failed passcode attempts on iPhone</TITLE>
-<AUTHOR>Bob Dylan</AUTHOR>
-<DATE>USA</DATE>
-<BODY>In January 2014, a Massachusetts cop was swearing into his mobile phone while working a traffic detail at a construction site.
+ </body>
+<image>snap.png</image>
+<url>post.html</url>
+</article>
+<article>
+<id>4</id>
+<title>Police destroy evidence with 10 failed passcode attempts on iPhone</title>
+<author>Bob Dylan</author>
+<date>2014-08-03</date>
+<body>In January 2014, a Massachusetts cop was swearing into his mobile phone while working a traffic detail at a construction site.
 The F bombs appeared to upset an elderly lady walking by, so a man on a nearby front porch asked the officer, Thomas Barboza, to stop swearing.
 The cop’s response: “Shut the f–k up and mind your own business." George Thompson’s response: he started recording Barboza on his iPhone. According to court documents, Barboza shoved 53-year-old Thompson to the ground, arrested him, handcuffed him, and put him in jail for a night.
 Police in the city of Fall River also tried to get into Thompson’s iPhone, where the footage of Barboza was stored. But all the police managed to do was to destroy the evidence, wiping the phone clean after entering the wrong password 10 times.
@@ -104,8 +107,8 @@ In May 2014, an appeals court confirmed that people’s right to record video of
 That’s far from the final word, however: earlier this month, Republican Senator John Kavanagh, from Arizona, proposed a bill that would put a 20-foot no-filming zone around cops, including penalties of $300 and up to six months in jail for filming closer than that.
 Other legislative actions around recording police have included similar legislation proposed in Texas last year, this one with a 25-foot no-filming zone.
 That one was dropped after widespread opposition. Colorado and California are coming at the issue from the opposite side, approving measures to protect the public from retaliation for recording police.
-</BODY>
-<IMAGE>iphone.png</IMAGE>
-<URL>iphone.html</URL>
-</ARTICLE>
-</ARTICLES>
+</body>
+<image>iphone.png</image>
+<url>iphone.html</url>
+</article>
+</articles>

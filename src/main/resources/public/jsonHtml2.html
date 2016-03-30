@@ -21,6 +21,7 @@ and open the template in the editor.
 			 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		
 <script src="js/signup.js"></script>
+<script src="js/comments.js"></script>
     </head>
    
     
@@ -53,9 +54,14 @@ and open the template in the editor.
        
         
 		<script>
+		
+		
+		
+		var id = GetURLParameter('id');
+		
             $(function () {
                 $.ajax({
-                    url: "/Article/0002",
+                    url: "/Article/"+id,
                     success: function (result) {
                         var data = JSON.parse(result);
 						var size = data.length;
@@ -78,7 +84,7 @@ and open the template in the editor.
 								divBook.setAttribute("id", i);
 								div.appendChild(divBook);
 								document.getElementById(i).innerHTML =  '<a href="post.html" ><img id="Postimg" src="'+data[i].ArticleImages+'"'+
-								'alt="'+data[i].ArticleTitle+'"><h2>'+data[i].ArticleTitle+'</h2>'+
+								'alt="'+data[i].ArticleTitle+'"><h2>'+data[i].ArticleTitle+'</h2> <div><div class=row><div>  '+ data[i].ArticleBody + ' </div></div></div>'+
 								'<h3> Posted by '+data[i].ArticleAuthors+'</h3><h4> Posted on '+data[i].ArticleDate+'</h4></a>';
 							
 						

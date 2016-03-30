@@ -49,6 +49,7 @@
 
 
 <script>
+var id = GetURLParameter('id');
 
  function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -57,17 +58,17 @@
       myFunction(xhttp);
     }
   };
-  xhttp.open("GET", "/WSxml/3", true);
+  xhttp.open("GET", "/WSxml/"+id, true);
   xhttp.send();
 }
 function myFunction(xml) {
   var i;
   var xmlDoc = xml.responseXML;
-    var x = xmlDoc.getElementsByTagName("ARTICLE");
+    var x = xmlDoc.getElementsByTagName("article");
 	
-  var content = "<div><img id='Postimg' src='banana.png' alt='Smily Face'><div id='snap'  ><div><div><h1>" + x[0].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue + "</h1>" +
-   "<span class='meta'>Posted by <a href='#'> " + x[0].getElementsByTagName("AUTHOR")[0].childNodes[0].nodeValue + "</a> on " + x[0].getElementsByTagName("DATE")[0].childNodes[0].nodeValue +"</span></div></div>" +
-  "<div  ><div class='row'><div> " + x[0].getElementsByTagName("BODY")[0].childNodes[0].nodeValue + " </div></div></div></div>";
+  var content = "<div><img id='Postimg' src=" + x[0].getElementsByTagName("image")[0].childNodes[0].nodeValue + " alt='Smily Face'><div id='snap'  ><div><div><h1>" + x[0].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</h1>" +
+   "<span class='meta'>Posted by <a href='#'> " + x[0].getElementsByTagName("author")[0].childNodes[0].nodeValue + "</a> on " + x[0].getElementsByTagName("date")[0].childNodes[0].nodeValue +"</span></div></div>" +
+  "<div><div class='row'><div> " + x[0].getElementsByTagName("body")[0].childNodes[0].nodeValue + " </div></div></div></div>";
    
 	  document.getElementById("demo").innerHTML = content;
 }
