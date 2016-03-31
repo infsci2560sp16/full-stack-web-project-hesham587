@@ -20,6 +20,11 @@
 
 </div>
 <div>
+  
+
+ 
+ 
+
 <ul>
   <li><a href="home.html">Home</a></li>
     <li><a href="search.html">Search</a></li>
@@ -27,7 +32,7 @@
       <li class="left"><a href="login.html">Login</a></li>
 	<li class="left"><a href="signup.html">Signup</a></li>
   </ul>
-
+ 
 
 </div>
 
@@ -52,7 +57,9 @@
                         </h2>
                       
                     </a>
+					
                     <p>  Posted by <a href="#">${author1}</a> on ${date1}</p>
+					<p><#if rate1=="1">senior author</#if></p>
                 </div>
                 <hr>
                 <div>
@@ -82,6 +89,7 @@
                         
                     </a>
                     <p class="post-meta">Posted by <a href="#">${author4}</a> on ${date4}</p>
+					<p><#if rate4=="2">junior  author</#if></p>
                 </div>
                 <hr>
                 <!-- Pager -->

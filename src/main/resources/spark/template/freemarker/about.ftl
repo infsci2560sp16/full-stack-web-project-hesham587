@@ -28,7 +28,18 @@
 	<li class="left"><a href="signup.html">Signup</a></li>
   </ul>
 </div>
+<h1>About iBlog</h1>
+<#list contents as content>
 
+<div class="row">
+
+<h4>${content}</h4>
+<hr>
+</div>
+<div class="col-2">
+</div>
+
+</#list>
 
 
 
